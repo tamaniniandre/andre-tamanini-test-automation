@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite failures="1" name="Test Suite" skipped="0" tests="1" time="12.268">
+
+<testcase classname="Validate the sending of vehicle quote" name="Send quote and validate success message" time="11.776">
+            
+    <failure message="element click intercepted: Element &lt;input id=&quot;righthanddriveyes&quot; name=&quot;Right Hand Drive&quot; type=&quot;radio&quot; value=&quot;Yes&quot; style=&quot;position: absolute; left: -9999px;&quot;&gt; is not clickable at point (377, 602). Other element would receive the click: &lt;span class=&quot;ideal-radio&quot;&gt;&lt;/span&gt;&#10;  (Session info: chrome=87.0.4280.88)&#10;Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'&#10;System info: host: 'DESKTOP-Q28KNKC', ip: '192.168.0.42', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '14.0.2'&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 87.0.4280.88, chrome: {chromedriverVersion: 86.0.4240.22 (398b0743353ff..., userDataDir: C:\Users\andre\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:61208}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}&#10;Session ID: 4be1f5e8ac5513fd6e89bb2a91b8a32c" type="org.openqa.selenium.ElementClickInterceptedException"><![CDATA[Given the entered vehicle entire data.......................................failed
+
+StackTrace:
+org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element <input id="righthanddriveyes" name="Right Hand Drive" type="radio" value="Yes" style="position: absolute; left: -9999px;"> is not clickable at point (377, 602). Other element would receive the click: <span class="ideal-radio"></span>
+  (Session info: chrome=87.0.4280.88)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-Q28KNKC', ip: '192.168.0.42', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '14.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 87.0.4280.88, chrome: {chromedriverVersion: 86.0.4240.22 (398b0743353ff..., userDataDir: C:\Users\andre\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:61208}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: 4be1f5e8ac5513fd6e89bb2a91b8a32c
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:276)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:83)
+	at com.accenture.fwk.page.BasePage.click(BasePage.java:23)
+	at com.accenture.fwk.page.BasePage.selectCheckbox(BasePage.java:55)
+	at com.accenture.test.automation.pageobjects.VehicleDataPage.selectRadioBtnRightHandDriver(VehicleDataPage.java:55)
+	at com.accenture.test.automation.steps.EnterVehicleDataSteps.queAcionadoOBotaoParaCadastrarFuncionario(EnterVehicleDataSteps.java:18)
+	at ✽.the entered vehicle entire data(file:///C:/Users/andre/workspace/accenture-test-automation/src/test/resources/features/Validate%20the%20sending%20of%20vehicle%20quote.feature:6)
+]]></failure>
+        
+</testcase>
+
+</testsuite>

@@ -1,0 +1,68 @@
+[ {
+  "line" : 2,
+  "elements" : [ {
+    "start_timestamp" : "2020-12-29T04:34:02.725Z",
+    "before" : [ {
+      "result" : {
+        "duration" : 53973200,
+        "status" : "passed"
+      },
+      "match" : {
+        "location" : "com.accenture.test.automation.hooks.DataStepsHooks.GenerateUserRandomData()"
+      }
+    }, {
+      "result" : {
+        "duration" : 4997300,
+        "status" : "passed"
+      },
+      "match" : {
+        "location" : "com.accenture.test.automation.hooks.DataStepsHooks.GenerateEmployeeRandomData()"
+      }
+    }, {
+      "result" : {
+        "duration" : 7420229000,
+        "status" : "passed"
+      },
+      "match" : {
+        "location" : "void com.accenture.fwk.hooks.Hooks.beforeAll(io.cucumber.java.Scenario)"
+      }
+    } ],
+    "line" : 5,
+    "name" : "Send quote and validate success message",
+    "description" : "",
+    "id" : "validate-the-sending-of-vehicle-quote;send-quote-and-validate-success-message",
+    "after" : [ {
+      "result" : {
+        "duration" : 768075900,
+        "status" : "passed"
+      },
+      "match" : {
+        "location" : "com.accenture.fwk.hooks.Hooks.quit()"
+      }
+    } ],
+    "type" : "scenario",
+    "keyword" : "Scenario",
+    "steps" : [ {
+      "result" : {
+        "error_message" : "org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element <input id=\"righthanddriveyes\" name=\"Right Hand Drive\" type=\"radio\" value=\"Yes\" style=\"position: absolute; left: -9999px;\"> is not clickable at point (377, 602). Other element would receive the click: <span class=\"ideal-radio\"></span>\n  (Session info: chrome=87.0.4280.88)\nBuild info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'\nSystem info: host: 'DESKTOP-Q28KNKC', ip: '192.168.0.42', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '14.0.2'\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 87.0.4280.88, chrome: {chromedriverVersion: 86.0.4240.22 (398b0743353ff..., userDataDir: C:\\Users\\andre\\AppData\\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:61208}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}\nSession ID: 4be1f5e8ac5513fd6e89bb2a91b8a32c\r\n\tat java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\r\n\tat java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)\r\n\tat java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\r\n\tat java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)\r\n\tat java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)\r\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)\r\n\tat org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:276)\r\n\tat org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:83)\r\n\tat com.accenture.fwk.page.BasePage.click(BasePage.java:23)\r\n\tat com.accenture.fwk.page.BasePage.selectCheckbox(BasePage.java:55)\r\n\tat com.accenture.test.automation.pageobjects.VehicleDataPage.selectRadioBtnRightHandDriver(VehicleDataPage.java:55)\r\n\tat com.accenture.test.automation.steps.EnterVehicleDataSteps.queAcionadoOBotaoParaCadastrarFuncionario(EnterVehicleDataSteps.java:18)\r\n\tat ✽.the entered vehicle entire data(file:///C:/Users/andre/workspace/accenture-test-automation/src/test/resources/features/Validate%20the%20sending%20of%20vehicle%20quote.feature:6)\r\n",
+        "duration" : 3427184700,
+        "status" : "failed"
+      },
+      "line" : 6,
+      "name" : "the entered vehicle entire data",
+      "match" : {
+        "location" : "com.accenture.test.automation.steps.EnterVehicleDataSteps.queAcionadoOBotaoParaCadastrarFuncionario()"
+      },
+      "keyword" : "Given "
+    } ],
+    "tags" : [ {
+      "name" : "@Building"
+    } ]
+  } ],
+  "name" : "Validate the sending of vehicle quote",
+  "description" : "",
+  "id" : "validate-the-sending-of-vehicle-quote",
+  "keyword" : "Feature",
+  "uri" : "file:src/test/resources/features/Validate%20the%20sending%20of%20vehicle%20quote.feature",
+  "tags" : [ ]
+} ]

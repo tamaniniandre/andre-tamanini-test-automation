@@ -1,0 +1,4 @@
+browser: chrome
+defaultWaitTimeInSeconds: 1
+defaultUrl: http://sampleapp.tricentis.com/101/app.php
+isHeadless: ${ISHEADLESS:false}
