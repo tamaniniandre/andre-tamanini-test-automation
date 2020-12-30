@@ -1,4 +1,5 @@
 package com.accenture.fwk.page;
+import com.accenture.fwk.DataSteps;
 import com.accenture.fwk.driverfactory.DriverFactory;
 import org.openqa.selenium.*;
 import org.openqa.selenium.interactions.Actions;
@@ -11,8 +12,10 @@ public class BasePage extends BaseValidates {
 
     public WebDriver driver;
     public String elementName;
+    public DataSteps dataSteps;
 
-    public BasePage(){
+    public BasePage(DataSteps dataSteps){
+        this.dataSteps = dataSteps;
         this.driver = DriverFactory.getDriver();
         waitForLoad();
     }
@@ -32,6 +35,7 @@ public class BasePage extends BaseValidates {
         waitElementClickable(element);
         element.sendKeys(Keys.chord(Keys.CONTROL+"a"),value);
         softAssertEquals(value, element.getText());
+        dataSteps.container.put(elementName, value);
     }
 
     public void selectByVisibleText(WebElement element, String value) throws Exception {
@@ -39,6 +43,7 @@ public class BasePage extends BaseValidates {
         Select select = new Select(element);
         select.selectByVisibleText(value);
         softAssertEquals(value, select.getFirstSelectedOption().getText());
+        dataSteps.container.put(elementName, value);
     }
     public void selectByRandomValue(WebElement element) throws Exception {
         validateIfTheElementIsNotNull(element,elementName);
@@ -47,12 +52,14 @@ public class BasePage extends BaseValidates {
         int randomValue = random.nextInt(select.getOptions().size()-1)+1;
         select.selectByIndex(randomValue);
         softAssertEquals(select.getOptions().get(randomValue).getText(), select.getFirstSelectedOption().getText());
+        dataSteps.container.put(elementName, select.getOptions().get(randomValue).getText());
     }
-    public void selectCheckbox(WebElement element, String value) throws Exception {
+    public void selectCheckboxOrRadioButton(WebElement element, String value) throws Exception {
         validateIfTheElementIsNotNull(element,elementName);
         Actions actions = new Actions(this.driver);
         actions.click(element).build().perform();
         softAssertEquals(value, element.getAttribute("value"));
+        dataSteps.container.put(elementName, value);
     }
 
     public WebElement tryFindElement(By by, String elementName){
@@ -68,7 +75,7 @@ public class BasePage extends BaseValidates {
             this.elementName = elementName;
             return driver.findElement(by);
         }catch (NoSuchElementException e){
-            throw new Exception("O elemento não foi encontrado: "+this.elementName);
+            throw new Exception("The element was not found: "+this.elementName);
         }
     }
     public WebElement findElementFromElement(By by, WebElement element, String elementName, boolean throwException) throws Exception {
@@ -77,7 +84,7 @@ public class BasePage extends BaseValidates {
             return element.findElement(by);
         }catch (NoSuchElementException e){
             if(throwException)
-                throw new Exception("O elemento não foi encontrado: "+elementName);
+                throw new Exception("The element was not found: "+elementName);
             else
                 return null;
         }
@@ -87,7 +94,7 @@ public class BasePage extends BaseValidates {
             this.elementName = elementName;
             return element.findElements(by);
         }catch (NoSuchElementException e){
-            throw new Exception("O elemento não foi encontrado: "+elementName);
+            throw new Exception("The element was not found: "+elementName);
         }
     }
 
