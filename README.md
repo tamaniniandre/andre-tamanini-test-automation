@@ -1,5 +1,33 @@
 # accenture-test-automation
 
+**How to execute:**
+- Download the project: 
+  git clone https://github.com/tamaniniandre/accenture-test-automation.git
+- To execute the automated tests, you can run the runner class: "RunTestngFeatureTests"
+  - Right-click on the class and RUN.
+  - The runner class is configured to run in parallel.
+- It is possible to execute using the Maven through the command line too
+   - mvn clean test -Dtest=com.accenture.test.automation.runners.RunTestngFeatureTests
+- It is possible to execute by cucumber feature too, the features path is: "src/test/resources/features    
+
+Ps. To execute by Maven is necessary its installation, by the following tutorial:
+   https://mkyong.com/maven/how-to-install-maven-in-windows/
+   
+  **Technologies:**
+- Selenium Web Driver
+- Cucumber
+- Cucumber Picocontainer
+- Cucumber courgette
+- TestNG.
+- JavaFaker
+- Linguagem de Programação Java.
+- Maven.
+
+**Reports:**
+- After the execution of the automated tests, inside the Report folder, in the root of the project, the HTML-report will be generated:
+    - cougertte-reports
+
+
 **Como executar:**
 - Para baixar o projeto: 
   git clone https://github.com/tamaniniandre/accenture-test-automation.git
@@ -24,5 +52,5 @@ Ps. Para execução pelo Maven, é necessário a sua instalação, tutorial:
 - Maven.
 
 **Reports:**
-- Após a execução dos testes, dentro da pasta Report na raíz do projeto teremos duas pastas com os respectivos html:
+- Após a execução dos testes, dentro da pasta Report na raíz do projeto, será gerado o html reporter:
     - cougertte-reports
