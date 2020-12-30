@@ -1,0 +1,7 @@
+
+------------------------------------------------------------------------
+Report published at: 2020-12-30T06:08:33.786257100Z
+
+Courgette published your Cucumber Report to:
+https://reports.cucumber.io/reports/6c0865ca-ca6c-4e3f-829e-0eab1af7831b
+------------------------------------------------------------------------
