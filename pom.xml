@@ -4,8 +4,8 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>com.accencture.test.automation</groupId>
-    <artifactId>accenture-test-automation</artifactId>
+    <groupId>com.andre.tamanini.test.automation</groupId>
+    <artifactId>andre-tamanini-test-automation</artifactId>
     <packaging>pom</packaging>
     <version>1.0-SNAPSHOT</version>
 
@@ -21,11 +21,6 @@
             <id>Sonatype-public</id>
             <name>SnakeYAML repository</name>
             <url>http://oss.sonatype.org/content/groups/public/</url>
-        </repository>
-        <repository>
-            <id>jcenter</id>
-            <name>bintray</name>
-            <url>https://jcenter.bintray.com</url>
         </repository>
     </repositories>
 
@@ -84,12 +79,6 @@
             <groupId>org.seleniumhq.selenium</groupId>
             <artifactId>selenium-support</artifactId>
             <version>3.12.0</version>
-            <scope>compile</scope>
-        </dependency>
-        <dependency>
-            <groupId>io.rest-assured</groupId>
-            <artifactId>rest-assured</artifactId>
-            <version>4.3.1</version>
             <scope>compile</scope>
         </dependency>
         <dependency>

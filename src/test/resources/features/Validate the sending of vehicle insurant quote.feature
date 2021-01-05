@@ -8,7 +8,7 @@
       When selected the price option "<Price Option>"
       And entered the quote user information below
       |E-Mail                    |Username        |Password    |Confirm Password |
-      |teste_accenture@teste.com |andre.tamanini  |Teste123456 |Teste123456      |
+      |andre.tamanini@teste.com |andre.tamanini  |Teste123456 |Teste123456      |
       Then should be shown the following success message "Sending e-mail success!"
 
       Examples:

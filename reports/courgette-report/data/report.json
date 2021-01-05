@@ -1,461 +1,148 @@
-[ {
-  "line" : 2,
-  "elements" : [ {
-    "start_timestamp" : "2020-12-30T06:11:20.855Z",
-    "before" : [ {
-      "result" : {
-        "duration" : 23777115100,
-        "status" : "passed"
-      },
-      "match" : {
-        "location" : "void com.accenture.fwk.hooks.Hooks.beforeAll(io.cucumber.java.Scenario)"
+[
+  {
+    "line": 2,
+    "elements": [
+      {
+        "start_timestamp": "2021-01-05T15:38:46.369Z",
+        "before": [
+          {
+            "result": {
+              "duration": 26558262300,
+              "status": "passed"
+            },
+            "match": {
+              "location": "void com.andre.tamanini.fwk.hooks.Hooks.beforeAll(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "line": 25,
+        "name": ": Send vehicle insurant quote and validate the success message for price Ultimate",
+        "description": "",
+        "id": "validate-the-sending-of-vehicle-quote;:-send-vehicle-insurant-quote-and-validate-the-success-message-for-price-\u003cprice-option\u003e;;2",
+        "after": [
+          {
+            "result": {
+              "duration": 3124844900,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.andre.tamanini.fwk.hooks.Hooks.quit()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 7178722500,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "that entered vehicle entire data",
+            "match": {
+              "location": "com.andre.tamanini.test.automation.steps.EnterVehicleDataSteps.theEnteredVehicleEntireData()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 9102588700,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "entered insurant entire data",
+            "match": {
+              "location": "com.andre.tamanini.test.automation.steps.EnterInsurantDateSteps.enteredInsuranteEntireData()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 3416037200,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "entered product entire data",
+            "match": {
+              "location": "com.andre.tamanini.test.automation.steps.EnterProductDateSteps.enteredProductEntireData()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 995428200,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "selected the price option \"Ultimate\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Ultimate\"",
+                  "offset": 26
+                }
+              ],
+              "location": "com.andre.tamanini.test.automation.steps.SelectPriceOptionSteps.selectedThePriceOption(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 1747988900,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "entered the quote user information below",
+            "match": {
+              "location": "com.andre.tamanini.test.automation.steps.SendQuoteSteps.enteredTheQuoteUserInformationBelow(java.util.List\u003cjava.util.Map\u003cjava.lang.String, java.lang.String\u003e\u003e)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "E-Mail",
+                  "Username",
+                  "Password",
+                  "Confirm Password"
+                ]
+              },
+              {
+                "cells": [
+                  "teste_accenture@teste.com",
+                  "andre.tamanini",
+                  "Teste123456",
+                  "Teste123456"
+                ]
+              }
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 8818578300,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "should be shown the following success message \"Sending e-mail success!\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Sending e-mail success!\"",
+                  "offset": 46
+                }
+              ],
+              "location": "com.andre.tamanini.test.automation.steps.SendQuoteSteps.shouldBeShownTheFollowingSuccessMessage(java.lang.String)"
+            },
+            "keyword": "Then "
+          }
+        ]
       }
-    } ],
-    "line" : 19,
-    "name" : ": Send vehicle insurant quote and validate the success message for price Gold",
-    "description" : "",
-    "id" : "validate-the-sending-of-vehicle-quote;:-send-vehicle-insurant-quote-and-validate-the-success-message-for-price-<price-option>;;2",
-    "after" : [ {
-      "result" : {
-        "duration" : 1793973700,
-        "status" : "passed"
-      },
-      "match" : {
-        "location" : "com.accenture.fwk.hooks.Hooks.quit()"
-      }
-    } ],
-    "type" : "scenario",
-    "keyword" : "Scenario Outline",
-    "steps" : [ {
-      "result" : {
-        "duration" : 20692189600,
-        "status" : "passed"
-      },
-      "line" : 5,
-      "name" : "that entered vehicle entire data",
-      "match" : {
-        "location" : "com.accenture.test.automation.steps.EnterVehicleDataSteps.theEnteredVehicleEntireData()"
-      },
-      "keyword" : "Given "
-    }, {
-      "result" : {
-        "duration" : 34577639400,
-        "status" : "passed"
-      },
-      "line" : 6,
-      "name" : "entered insurant entire data",
-      "match" : {
-        "location" : "com.accenture.test.automation.steps.EnterInsurantDateSteps.enteredInsuranteEntireData()"
-      },
-      "keyword" : "And "
-    }, {
-      "result" : {
-        "duration" : 2197870100,
-        "status" : "passed"
-      },
-      "line" : 7,
-      "name" : "entered product entire data",
-      "match" : {
-        "location" : "com.accenture.test.automation.steps.EnterProductDateSteps.enteredProductEntireData()"
-      },
-      "keyword" : "And "
-    }, {
-      "result" : {
-        "duration" : 874716200,
-        "status" : "passed"
-      },
-      "line" : 8,
-      "name" : "selected the price option \"Gold\"",
-      "match" : {
-        "arguments" : [ {
-          "val" : "\"Gold\"",
-          "offset" : 26
-        } ],
-        "location" : "com.accenture.test.automation.steps.SelectPriceOptionSteps.selectedThePriceOption(java.lang.String)"
-      },
-      "keyword" : "When "
-    }, {
-      "result" : {
-        "duration" : 1352222800,
-        "status" : "passed"
-      },
-      "line" : 9,
-      "name" : "entered the quote user information below",
-      "match" : {
-        "location" : "com.accenture.test.automation.steps.SendQuoteSteps.enteredTheQuoteUserInformationBelow(java.util.List<java.util.Map<java.lang.String, java.lang.String>>)"
-      },
-      "rows" : [ {
-        "cells" : [ "E-Mail", "Username", "Password", "Confirm Password" ]
-      }, {
-        "cells" : [ "teste_accenture@teste.com", "andre.tamanini", "Teste123456", "Teste123456" ]
-      } ],
-      "keyword" : "And "
-    }, {
-      "result" : {
-        "duration" : 8482730100,
-        "status" : "passed"
-      },
-      "line" : 12,
-      "name" : "should be shown the following success message \"Sending e-mail success!\"",
-      "match" : {
-        "arguments" : [ {
-          "val" : "\"Sending e-mail success!\"",
-          "offset" : 46
-        } ],
-        "location" : "com.accenture.test.automation.steps.SendQuoteSteps.shouldBeShownTheFollowingSuccessMessage(java.lang.String)"
-      },
-      "keyword" : "Then "
-    } ]
-  } ],
-  "name" : "Validate the sending of vehicle quote",
-  "description" : "",
-  "id" : "validate-the-sending-of-vehicle-quote",
-  "keyword" : "Feature",
-  "uri" : "file:src/test/resources/features/Validate%20the%20sending%20of%20vehicle%20insurant%20quote.feature",
-  "tags" : [ ]
-} , {
-  "line" : 2,
-  "elements" : [ {
-    "start_timestamp" : "2020-12-30T06:11:20.871Z",
-    "before" : [ {
-      "result" : {
-        "duration" : 25225738500,
-        "status" : "passed"
-      },
-      "match" : {
-        "location" : "void com.accenture.fwk.hooks.Hooks.beforeAll(io.cucumber.java.Scenario)"
-      }
-    } ],
-    "line" : 25,
-    "name" : ": Send vehicle insurant quote and validate the success message for price Ultimate",
-    "description" : "",
-    "id" : "validate-the-sending-of-vehicle-quote;:-send-vehicle-insurant-quote-and-validate-the-success-message-for-price-<price-option>;;2",
-    "after" : [ {
-      "result" : {
-        "duration" : 1135350400,
-        "status" : "passed"
-      },
-      "match" : {
-        "location" : "com.accenture.fwk.hooks.Hooks.quit()"
-      }
-    } ],
-    "type" : "scenario",
-    "keyword" : "Scenario Outline",
-    "steps" : [ {
-      "result" : {
-        "duration" : 27070579600,
-        "status" : "passed"
-      },
-      "line" : 5,
-      "name" : "that entered vehicle entire data",
-      "match" : {
-        "location" : "com.accenture.test.automation.steps.EnterVehicleDataSteps.theEnteredVehicleEntireData()"
-      },
-      "keyword" : "Given "
-    }, {
-      "result" : {
-        "duration" : 11302501100,
-        "status" : "passed"
-      },
-      "line" : 6,
-      "name" : "entered insurant entire data",
-      "match" : {
-        "location" : "com.accenture.test.automation.steps.EnterInsurantDateSteps.enteredInsuranteEntireData()"
-      },
-      "keyword" : "And "
-    }, {
-      "result" : {
-        "duration" : 2008440200,
-        "status" : "passed"
-      },
-      "line" : 7,
-      "name" : "entered product entire data",
-      "match" : {
-        "location" : "com.accenture.test.automation.steps.EnterProductDateSteps.enteredProductEntireData()"
-      },
-      "keyword" : "And "
-    }, {
-      "result" : {
-        "duration" : 889895400,
-        "status" : "passed"
-      },
-      "line" : 8,
-      "name" : "selected the price option \"Ultimate\"",
-      "match" : {
-        "arguments" : [ {
-          "val" : "\"Ultimate\"",
-          "offset" : 26
-        } ],
-        "location" : "com.accenture.test.automation.steps.SelectPriceOptionSteps.selectedThePriceOption(java.lang.String)"
-      },
-      "keyword" : "When "
-    }, {
-      "result" : {
-        "duration" : 1627064700,
-        "status" : "passed"
-      },
-      "line" : 9,
-      "name" : "entered the quote user information below",
-      "match" : {
-        "location" : "com.accenture.test.automation.steps.SendQuoteSteps.enteredTheQuoteUserInformationBelow(java.util.List<java.util.Map<java.lang.String, java.lang.String>>)"
-      },
-      "rows" : [ {
-        "cells" : [ "E-Mail", "Username", "Password", "Confirm Password" ]
-      }, {
-        "cells" : [ "teste_accenture@teste.com", "andre.tamanini", "Teste123456", "Teste123456" ]
-      } ],
-      "keyword" : "And "
-    }, {
-      "result" : {
-        "duration" : 8492525800,
-        "status" : "passed"
-      },
-      "line" : 12,
-      "name" : "should be shown the following success message \"Sending e-mail success!\"",
-      "match" : {
-        "arguments" : [ {
-          "val" : "\"Sending e-mail success!\"",
-          "offset" : 46
-        } ],
-        "location" : "com.accenture.test.automation.steps.SendQuoteSteps.shouldBeShownTheFollowingSuccessMessage(java.lang.String)"
-      },
-      "keyword" : "Then "
-    } ]
-  } ],
-  "name" : "Validate the sending of vehicle quote",
-  "description" : "",
-  "id" : "validate-the-sending-of-vehicle-quote",
-  "keyword" : "Feature",
-  "uri" : "file:src/test/resources/features/Validate%20the%20sending%20of%20vehicle%20insurant%20quote.feature",
-  "tags" : [ ]
-} , {
-  "line" : 2,
-  "elements" : [ {
-    "start_timestamp" : "2020-12-30T06:11:20.449Z",
-    "before" : [ {
-      "result" : {
-        "duration" : 24246709200,
-        "status" : "passed"
-      },
-      "match" : {
-        "location" : "void com.accenture.fwk.hooks.Hooks.beforeAll(io.cucumber.java.Scenario)"
-      }
-    } ],
-    "line" : 16,
-    "name" : ": Send vehicle insurant quote and validate the success message for price Silver",
-    "description" : "",
-    "id" : "validate-the-sending-of-vehicle-quote;:-send-vehicle-insurant-quote-and-validate-the-success-message-for-price-<price-option>;;2",
-    "after" : [ {
-      "result" : {
-        "duration" : 1223292700,
-        "status" : "passed"
-      },
-      "match" : {
-        "location" : "com.accenture.fwk.hooks.Hooks.quit()"
-      }
-    } ],
-    "type" : "scenario",
-    "keyword" : "Scenario Outline",
-    "steps" : [ {
-      "result" : {
-        "duration" : 19152077700,
-        "status" : "passed"
-      },
-      "line" : 5,
-      "name" : "that entered vehicle entire data",
-      "match" : {
-        "location" : "com.accenture.test.automation.steps.EnterVehicleDataSteps.theEnteredVehicleEntireData()"
-      },
-      "keyword" : "Given "
-    }, {
-      "result" : {
-        "duration" : 50187628400,
-        "status" : "passed"
-      },
-      "line" : 6,
-      "name" : "entered insurant entire data",
-      "match" : {
-        "location" : "com.accenture.test.automation.steps.EnterInsurantDateSteps.enteredInsuranteEntireData()"
-      },
-      "keyword" : "And "
-    }, {
-      "result" : {
-        "duration" : 2171929800,
-        "status" : "passed"
-      },
-      "line" : 7,
-      "name" : "entered product entire data",
-      "match" : {
-        "location" : "com.accenture.test.automation.steps.EnterProductDateSteps.enteredProductEntireData()"
-      },
-      "keyword" : "And "
-    }, {
-      "result" : {
-        "duration" : 932940700,
-        "status" : "passed"
-      },
-      "line" : 8,
-      "name" : "selected the price option \"Silver\"",
-      "match" : {
-        "arguments" : [ {
-          "val" : "\"Silver\"",
-          "offset" : 26
-        } ],
-        "location" : "com.accenture.test.automation.steps.SelectPriceOptionSteps.selectedThePriceOption(java.lang.String)"
-      },
-      "keyword" : "When "
-    }, {
-      "result" : {
-        "duration" : 1232291800,
-        "status" : "passed"
-      },
-      "line" : 9,
-      "name" : "entered the quote user information below",
-      "match" : {
-        "location" : "com.accenture.test.automation.steps.SendQuoteSteps.enteredTheQuoteUserInformationBelow(java.util.List<java.util.Map<java.lang.String, java.lang.String>>)"
-      },
-      "rows" : [ {
-        "cells" : [ "E-Mail", "Username", "Password", "Confirm Password" ]
-      }, {
-        "cells" : [ "teste_accenture@teste.com", "andre.tamanini", "Teste123456", "Teste123456" ]
-      } ],
-      "keyword" : "And "
-    }, {
-      "result" : {
-        "duration" : 9242628400,
-        "status" : "passed"
-      },
-      "line" : 12,
-      "name" : "should be shown the following success message \"Sending e-mail success!\"",
-      "match" : {
-        "arguments" : [ {
-          "val" : "\"Sending e-mail success!\"",
-          "offset" : 46
-        } ],
-        "location" : "com.accenture.test.automation.steps.SendQuoteSteps.shouldBeShownTheFollowingSuccessMessage(java.lang.String)"
-      },
-      "keyword" : "Then "
-    } ]
-  } ],
-  "name" : "Validate the sending of vehicle quote",
-  "description" : "",
-  "id" : "validate-the-sending-of-vehicle-quote",
-  "keyword" : "Feature",
-  "uri" : "file:src/test/resources/features/Validate%20the%20sending%20of%20vehicle%20insurant%20quote.feature",
-  "tags" : [ ]
-} , {
-  "line" : 2,
-  "elements" : [ {
-    "start_timestamp" : "2020-12-30T06:11:20.777Z",
-    "before" : [ {
-      "result" : {
-        "duration" : 25148123700,
-        "status" : "passed"
-      },
-      "match" : {
-        "location" : "void com.accenture.fwk.hooks.Hooks.beforeAll(io.cucumber.java.Scenario)"
-      }
-    } ],
-    "line" : 22,
-    "name" : ": Send vehicle insurant quote and validate the success message for price Platinum",
-    "description" : "",
-    "id" : "validate-the-sending-of-vehicle-quote;:-send-vehicle-insurant-quote-and-validate-the-success-message-for-price-<price-option>;;2",
-    "after" : [ {
-      "result" : {
-        "duration" : 8425165500,
-        "status" : "passed"
-      },
-      "match" : {
-        "location" : "com.accenture.fwk.hooks.Hooks.quit()"
-      }
-    } ],
-    "type" : "scenario",
-    "keyword" : "Scenario Outline",
-    "steps" : [ {
-      "result" : {
-        "duration" : 4935974300,
-        "status" : "passed"
-      },
-      "line" : 5,
-      "name" : "that entered vehicle entire data",
-      "match" : {
-        "location" : "com.accenture.test.automation.steps.EnterVehicleDataSteps.theEnteredVehicleEntireData()"
-      },
-      "keyword" : "Given "
-    }, {
-      "result" : {
-        "duration" : 6810943900,
-        "status" : "passed"
-      },
-      "line" : 6,
-      "name" : "entered insurant entire data",
-      "match" : {
-        "location" : "com.accenture.test.automation.steps.EnterInsurantDateSteps.enteredInsuranteEntireData()"
-      },
-      "keyword" : "And "
-    }, {
-      "result" : {
-        "duration" : 2948502500,
-        "status" : "passed"
-      },
-      "line" : 7,
-      "name" : "entered product entire data",
-      "match" : {
-        "location" : "com.accenture.test.automation.steps.EnterProductDateSteps.enteredProductEntireData()"
-      },
-      "keyword" : "And "
-    }, {
-      "result" : {
-        "duration" : 985001000,
-        "status" : "passed"
-      },
-      "line" : 8,
-      "name" : "selected the price option \"Platinum\"",
-      "match" : {
-        "arguments" : [ {
-          "val" : "\"Platinum\"",
-          "offset" : 26
-        } ],
-        "location" : "com.accenture.test.automation.steps.SelectPriceOptionSteps.selectedThePriceOption(java.lang.String)"
-      },
-      "keyword" : "When "
-    }, {
-      "result" : {
-        "duration" : 1876566400,
-        "status" : "passed"
-      },
-      "line" : 9,
-      "name" : "entered the quote user information below",
-      "match" : {
-        "location" : "com.accenture.test.automation.steps.SendQuoteSteps.enteredTheQuoteUserInformationBelow(java.util.List<java.util.Map<java.lang.String, java.lang.String>>)"
-      },
-      "rows" : [ {
-        "cells" : [ "E-Mail", "Username", "Password", "Confirm Password" ]
-      }, {
-        "cells" : [ "teste_accenture@teste.com", "andre.tamanini", "Teste123456", "Teste123456" ]
-      } ],
-      "keyword" : "And "
-    }, {
-      "result" : {
-        "duration" : 9043854400,
-        "status" : "passed"
-      },
-      "line" : 12,
-      "name" : "should be shown the following success message \"Sending e-mail success!\"",
-      "match" : {
-        "arguments" : [ {
-          "val" : "\"Sending e-mail success!\"",
-          "offset" : 46
-        } ],
-        "location" : "com.accenture.test.automation.steps.SendQuoteSteps.shouldBeShownTheFollowingSuccessMessage(java.lang.String)"
-      },
-      "keyword" : "Then "
-    } ]
-  } ],
-  "name" : "Validate the sending of vehicle quote",
-  "description" : "",
-  "id" : "validate-the-sending-of-vehicle-quote",
-  "keyword" : "Feature",
-  "uri" : "file:src/test/resources/features/Validate%20the%20sending%20of%20vehicle%20insurant%20quote.feature",
-  "tags" : [ ]
-} ]
+    ],
+    "name": "Validate the sending of vehicle quote",
+    "description": "",
+    "id": "validate-the-sending-of-vehicle-quote",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/features/Validate%20the%20sending%20of%20vehicle%20insurant%20quote.feature",
+    "tags": []
+  }
+]
