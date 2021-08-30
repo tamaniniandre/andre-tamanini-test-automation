@@ -1,7 +1,0 @@
-
-------------------------------------------------------------------------
-Report published at: 2021-06-17T03:24:54.739171900Z
-
-Courgette published your Cucumber Report to:
-https://reports.cucumber.io/reports/f9beffcf-ab36-4f49-b37b-93d54205f30a
-------------------------------------------------------------------------

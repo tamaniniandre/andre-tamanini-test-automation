@@ -8,7 +8,6 @@ import org.openqa.selenium.WebElement;
 
 public class InsurantDataPage extends BasePage {
 
-  private WebElement element;
   private static final String ID_INPUT_FIRST_NAME = "firstname";
   private static final String ID_INPUT_LAST_NAME = "lastname";
   private static final String ID_INPUT_DATE_OF_BIRTH = "birthdate";

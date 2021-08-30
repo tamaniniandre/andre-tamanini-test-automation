@@ -8,7 +8,6 @@ import org.openqa.selenium.WebElement;
 
 public class VehicleDataPage extends BasePage {
 
-  private WebElement element;
   private static final String ID_SELECT_MAKE = "make";
   private static final String ID_SELECT_MODEL = "model";
   private static final String ID_INPUT_CYLINDER_CAPACITY = "cylindercapacity";

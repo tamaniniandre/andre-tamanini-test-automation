@@ -7,7 +7,6 @@ import org.openqa.selenium.WebElement;
 
 public class PriceOptionPage extends BasePage {
 
-  private WebElement element;
   private static final String ID_BTN_NEXT = "nextsendquote";
   private static final String CSS_SELECTOR_RADIO_PRICE = "input[value='%s']";
 

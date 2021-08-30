@@ -13,6 +13,7 @@ public class BasePage extends BaseValidates {
     public WebDriver driver;
     public String elementName;
     public DataSteps dataSteps;
+    public WebElement element;
 
     public BasePage(DataSteps dataSteps){
         this.dataSteps = dataSteps;
@@ -23,6 +24,7 @@ public class BasePage extends BaseValidates {
     public void click(WebElement element) throws Exception {
         validateIfTheElementIsNotNull(element,elementName);
         waitElementClickable(element);
+        this.driver.manage().deleteAllCookies();
         element.click();
     }
     public void moveToElement(WebElement element){
@@ -57,6 +59,7 @@ public class BasePage extends BaseValidates {
     public void selectCheckboxOrRadioButton(WebElement element, String value) throws Exception {
         validateIfTheElementIsNotNull(element,elementName);
         Actions actions = new Actions(this.driver);
+        actions.moveToElement(element).build().perform();
         actions.click(element).build().perform();
         softAssertEquals(value, element.getAttribute("value"));
         dataSteps.container.put(elementName, value);

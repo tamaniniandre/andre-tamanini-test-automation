@@ -8,7 +8,6 @@ import org.openqa.selenium.WebElement;
 
 public class ProductDataPage extends BasePage {
 
-  private WebElement element;
   private static final String ID_INPUT_START_DATE = "startdate";
   private static final String ID_SELECT_INSURANCE_SUM = "insurancesum";
   private static final String ID_SELECT_MERIT_RATING = "meritrating";

@@ -7,7 +7,6 @@ import org.openqa.selenium.WebElement;
 
 public class QuotePage extends BasePage {
 
-    private WebElement element;
     private static final String ID_INPUT_EMAIL = "email";
     private static final String ID_INPUT_USERNAME = "username";
     private static final String ID_INPUT_PASSWORD = "password";
