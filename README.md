@@ -11,6 +11,7 @@
 - It is possible to execute by cucumber feature too, the features path is: "src/test/resources/features    
 - **The current chrome version supported is 100, so if necessary, update or downgrade your chrome driver here:**
 - https://chromedriver.chromium.org/downloads
+
 **- Download the chromedriver according to yout browser and save it at src/main/resources/drivers**
 
 Ps. To execute by Maven is necessary its installation, by the following tutorial:
